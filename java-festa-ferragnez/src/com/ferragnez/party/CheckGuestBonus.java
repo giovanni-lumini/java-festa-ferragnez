@@ -1,8 +1,9 @@
+package com.ferragnez.party;
 
 //scanner per leggere da tastiera/console
 import java.util.Scanner;
 
-public class CheckGuest {
+public class CheckGuestBonus {
     public static void main(String[] args) {
 
         String arrayGuest[] = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi",
@@ -14,13 +15,13 @@ public class CheckGuest {
         String userGuest = input.nextLine();
 
         boolean guestFound = false;
-
-        for (int i = 0; i < arrayGuest.length; i++) {
-            // equals raffronta il valore delle stringhe
-            if (!guestFound && arrayGuest[i].equals(userGuest)) {
+        int i = 0;
+        while (!guestFound && i < arrayGuest.length) {
+            if (arrayGuest[i].equals(userGuest)) {
                 guestFound = true;
-                // se guestFound = true, interrompe il ciclo
                 break;
+            } else {
+                i++;
             }
         }
 

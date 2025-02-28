@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class CheckGuest {
     public static void main(String[] args) {
 
-        String arrayGuest[] = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi",
+        String[] arrayGuest = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti", "Ilary Blasi",
                 "Bebe Bio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic", };
 
         // scanner per leggere da tastiera/console

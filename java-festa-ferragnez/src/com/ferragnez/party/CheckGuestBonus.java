@@ -18,7 +18,7 @@ public class CheckGuestBonus {
         boolean guestFound = false;
         int i = 0;
         while (!guestFound && i < arrayGuest.length) {
-            if (arrayGuest[i].equals(userGuest)) {
+            if (arrayGuest[i].toLowerCase().equals(userGuest.toLowerCase())) {
                 guestFound = true;
                 break;
             } else {

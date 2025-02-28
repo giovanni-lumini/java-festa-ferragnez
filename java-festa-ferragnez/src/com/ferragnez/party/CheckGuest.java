@@ -15,10 +15,9 @@ public class CheckGuest {
         String userGuest = input.nextLine();
 
         boolean guestFound = false;
-
         for (int i = 0; i < arrayGuest.length; i++) {
             // equals raffronta il valore delle stringhe
-            if (!guestFound && arrayGuest[i].equals(userGuest)) {
+            if (!guestFound && arrayGuest[i].toLowerCase().equals(userGuest.toLowerCase())) {
                 guestFound = true;
                 // se guestFound = true, interrompe il ciclo
                 break;
